@@ -43,8 +43,8 @@ Any static assets, like images, can be placed in the `public/` directory.
 - 🧪 **[Vitest](https://vitest.dev/)** - Professional testing and benchmarking library
 - 📦 **[React-Icons](https://react-icons.github.io/react-icons/)** - Thousands of icons react components ready to be used in your code.
 - 🎨 **Custom Theme** - You can choose between light and dark mode, import the `ToggleTheme` component to do it. To setup the colors, go to the `tailwind.config.mjs` file.
-- 🖰 **[Shadcn UI](https://ui.shadcn.com/docs)** - One of the most used React UI libraries fully configured.
-- 🗃️ **[Turso DB](https://turso.tech/)** - The biggest SQL database provider, fully configured and a class to work with it easely. I created a little class for working with the database, check the
+- 🖰 **[Preline UI](https://preline.co/index.html)** - A lightweight but powerful UI components library
+- 🗃️ **[SQL Database](https://turso.tech/)** - Ready to use configuration to Turso DB, one of the most used hosted SQL Database.
 
 ## 🧞 Scripts
 
