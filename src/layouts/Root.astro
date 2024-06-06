@@ -1,6 +1,6 @@
 ---
 const { language = 'en', title } = Astro.props
-import "@/styles/global.css"
+import '@/styles/global.css'
 ---
 
 <!doctype html>
@@ -10,7 +10,7 @@ import "@/styles/global.css"
 		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 		<title>{title}</title>
 	</head>
-	<body class='bg-bg_light dark:bg-bg_dark text-font_light dark:text-font_dark'>
+	<body class='bg-bg_light text-font_light dark:bg-bg_dark dark:text-font_dark'>
 		<slot />
 		<script is:inline>
 			const theme = (() => {
@@ -33,5 +33,6 @@ import "@/styles/global.css"
 
 			window.localStorage.setItem('theme', theme)
 		</script>
+		<script src='node_modules/preline/dist/preline.js'></script>
 	</body>
 </html>

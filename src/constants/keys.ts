@@ -1,5 +1,5 @@
 const KEYS = {
-    THEME: "theme",
+	THEME: 'theme',
 }
 
 export default KEYS
