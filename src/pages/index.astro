@@ -1,16 +1,11 @@
 ---
-
+import ToggleThemeIcon from '@/components/ui/ThemeToggleButton'
+import Root from '@/layouts/Root.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Root title='Astro Template'>
+	<section class='flex h-screen items-center justify-center gap-5'>
+		<h1 class='text-6xl font-light'>Astro Template</h1>
+		<ToggleThemeIcon client:only='react' />
+	</section>
+</Root>
