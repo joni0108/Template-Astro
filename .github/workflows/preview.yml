@@ -1,12 +1,44 @@
-name: Vercel Preview Deployment
+name: Project Healthy & Preview Deployment
+
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
 on:
   push:
-    branches-ignore:
+    branches:
       - main
+      - master
+      - dev
+  pull_request:
+    branches:
+      - main
+      - master
+      - dev
+
 jobs:
+  Check-project-Health:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci
+      - name: Check for prettier errors
+        run: npm run prettier:check
+      - name: Run test suits
+        run: npm run test
+      - name: Builds the project
+        run: npm run build
+
   Deploy-Preview:
     runs-on: ubuntu-latest
     steps:
