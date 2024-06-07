@@ -1,5 +1,8 @@
 {
   "name": "templates-astro",
+  "description": "A simple Astro project template",
+  "author": "Codixfy",
+  "license": "MIT",
   "type": "module",
   "version": "0.0.1",
   "scripts": {

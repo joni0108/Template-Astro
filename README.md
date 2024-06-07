@@ -58,6 +58,18 @@ All commands are run from the root of the project, from a terminal:
 - `prettier:check`: Checks all the files for code styling rules broken
 - `prettier:fix`: Fix all the code styling rules broken
 
+## 🙋‍♂️ How to customize to yourself
+
+1. Go to `manifest.json` and update the information based on your project:
+   - name
+   - description
+   - version
+   - author
+2. Go to `src/pages/index.html` and change the `title` prop to your page title.
+3. Go to `src/constants/project.ts` and change the values to your project values.
+
+Enjoy!
+
 ## 🥇 Contributions
 
 If you want to contribute to this template, feel free to do it!
