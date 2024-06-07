@@ -37,6 +37,7 @@ Any static assets, like images, can be placed in the `public/` directory.
 - 🏎️ **[Astro Framework](https://astro.build/)** - One of the fastest and easier solutions for simple web pages. Includes **(Pages Routing)**
 - 💅 **[Tailwind CSS](https://tailwindcss.com/)** - A utility-first CSS framework for quick UI development using class based styling.
 - ✨ **[Prettier](https://prettier.io/)** - For clean and consistent codebase styling habits.
+- 🐺 **[Husky](https://typicode.github.io/husky/)** - For pre-commit hooks, do your tests before pushing to your branch.
 - 🛠️ **[Strict TypeScript](https://www.typescriptlang.org/)** - Types to JavaScript to see errors at dev time, not runtime.
 - 🚀 **[GitHub Actions](https://github.com/features/actions)** - Pre-configured Github action to check code styling, run tests suits and build the project before too late.
 - 🧪 **[Vitest](https://vitest.dev/)** - Professional testing and benchmarking library
