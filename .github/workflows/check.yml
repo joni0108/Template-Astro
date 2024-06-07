@@ -1,0 +1,32 @@
+name: Project Healthy Push Validation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Check-project-Health:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci
+      - name: Check for prettier errors
+        run: npm run prettier:check
+      - name: Run test suits
+        run: npm run test
+      - name: Builds the project
+        run: npm run build
