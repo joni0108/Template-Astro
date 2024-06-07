@@ -21,7 +21,6 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── lib/
 │   └── pages/
 │       └── index.astro
-|       └── 404.astro
 │   └── services/
 └── .env
 └── package.json
@@ -44,7 +43,6 @@ Any static assets, like images, can be placed in the `public/` directory.
 - 📦 **[React-Icons](https://react-icons.github.io/react-icons/)** - Thousands of icons react components ready to be used in your code.
 - 🎨 **Custom Theme** - You can choose between light and dark mode, import the `ToggleTheme` component to do it. To setup the colors, go to the `tailwind.config.mjs` file.
 - 🖰 **[Preline UI](https://preline.co/index.html)** - A lightweight but powerful UI components library
-- 🗃️ **[SQL Database](https://turso.tech/)** - Ready to use configuration to Turso DB, one of the most used hosted SQL Database.
 
 ## 🧞 Scripts
 

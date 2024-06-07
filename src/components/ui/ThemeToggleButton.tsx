@@ -1,11 +1,11 @@
-import KEYS from '../../constants/keys'
+import KEYS from '@/constants/keys'
 import { useState, useEffect } from 'react'
 import { FaSun, FaMoon } from 'react-icons/fa'
 
 function ToggleThemeIcon() {
 	const [theme, setTheme] = useState<string>(localStorage.getItem(KEYS.THEME) ?? 'light')
 
-	function handleClick() {
+	async function handleClick() {
 		setTheme(theme === 'light' ? 'dark' : 'light')
 	}
 
