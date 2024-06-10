@@ -1,6 +1,10 @@
 # Astro Starter Kit
 
 This is the starter kit for a website using Astro framework.
+<div>
+<img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/joni0108/Template-Astro/preview.yml">
+<img alt="GitHub License" src="https://img.shields.io/github/license/joni0108/Template-Astro">
+</div>
 
 ## 🚀 Project Structure
 
